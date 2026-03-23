@@ -1,0 +1,20 @@
+import algorithms.sorting.n2.BubbleSort;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args){
+        List<Integer> numbersToSort = new ArrayList<>();
+        numbersToSort.add(5);
+        numbersToSort.add(4);
+        numbersToSort.add(7);
+        numbersToSort.add(1);
+        numbersToSort.add(1);
+        numbersToSort.add(3);
+        System.out.println(numbersToSort);
+
+        BubbleSort bubbleSort = new BubbleSort();
+        System.out.println(bubbleSort.sort(numbersToSort));
+    }
+}
