@@ -1,3 +1,4 @@
+import algorithms.searching.n.LinearSearch;
 import algorithms.sorting.n2.BubbleSort;
 
 import java.util.ArrayList;
@@ -16,5 +17,7 @@ public class Main {
 
         BubbleSort bubbleSort = new BubbleSort();
         System.out.println(bubbleSort.sort(numbersToSort));
+        LinearSearch linearSearch = new LinearSearch();
+        System.out.println(linearSearch.search(numbersToSort,4));
     }
 }
