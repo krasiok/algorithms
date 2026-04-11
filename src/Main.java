@@ -1,3 +1,4 @@
+import algorithms.searching.logn.BinarySearch;
 import algorithms.searching.n.LinearSearch;
 import algorithms.sorting.n2.BubbleSort;
 import algorithms.sorting.n2.InsertionSort;
@@ -14,7 +15,7 @@ public class Main {
         numbersToSort.add(1);
         numbersToSort.add(1);
         numbersToSort.add(3);
-        System.out.println(numbersToSort);
+//        System.out.println(numbersToSort);
 
 //        BubbleSort bubbleSort = new BubbleSort();
 //        System.out.println(bubbleSort.sort(numbersToSort));
@@ -22,6 +23,10 @@ public class Main {
 //        System.out.println(linearSearch.search(numbersToSort,4));
 
         InsertionSort insertionSort = new InsertionSort();
-        System.out.println(insertionSort.sort(numbersToSort));
+        insertionSort.sort(numbersToSort);
+        System.out.println(numbersToSort);
+
+        BinarySearch binarySearch = new BinarySearch();
+        System.out.println(binarySearch.search(numbersToSort,2));
     }
 }
